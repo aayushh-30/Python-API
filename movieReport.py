@@ -2,7 +2,7 @@ import requests
 
 def getData(name):
     base_url = "https://www.omdbapi.com/?apikey="
-    api_key = "14f58629"
+    api_key = "ENTER YOUR API KEY"
     complete_base_url = f"{base_url}{api_key}&s={name}" 
     response = requests.get(complete_base_url)
     data = response.json()

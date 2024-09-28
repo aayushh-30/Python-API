@@ -1,6 +1,6 @@
 import requests,json
 
-def getting_report(name,apiKey = "1f943b196eccdd07398fabeebaf41e14"):
+def getting_report(name,apiKey = "ENTER YOUR API KEY"):
     baseUrl = "https://api.openweathermap.org/data/2.5/weather?q="
     complete_base_url = baseUrl+name+"&appid="+apiKey
     response = requests.get(complete_base_url)
